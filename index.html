@@ -754,13 +754,19 @@
     <nav>
         <div class="nav-inner">
             <a href="/" class="logo">
-                <svg viewBox="0 0 100 80" width="32" height="26" fill="none" style="vertical-align: middle; margin-right: 8px;">
-                    <path d="M5 50 Q15 48 25 50 Q35 52 42 50" stroke="var(--ink-3)" stroke-width="1.5" fill="none"/>
-                    <path d="M58 50 Q65 52 75 50 Q85 48 95 50" stroke="var(--ink-3)" stroke-width="1.5" fill="none"/>
-                    <path d="M42 50 Q46 50 48 35 Q50 15 50 15 Q50 15 52 35 Q54 50 58 50" stroke="var(--accent)" stroke-width="3" fill="none" stroke-linecap="round"/>
-                    <circle cx="50" cy="15" r="6" fill="var(--accent)" opacity="0.2"/>
-                    <circle cx="50" cy="15" r="3" fill="var(--accent)"/>
-                </svg>Signyl
+                <svg viewBox="0 0 200 120" width="32" height="20" fill="none" style="vertical-align: middle; margin-right: 6px;">
+                    <defs>
+                        <radialGradient id="navGlow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.5"/>
+                            <stop offset="60%" stop-color="var(--accent)" stop-opacity="0.1"/>
+                            <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                    <path d="M 25 72 C 35 72 40 72 50 72 C 55 72 60 65 68 58 C 73 53 76 56 80 65 C 83 72 85 80 88 85 C 89 87 90 87 91 84 L 96 38 C 97 28 98 18 98.5 15 C 99 18 100 28 101 38 L 106 84 C 107 87 108 87 109 85 C 112 78 116 72 122 70 C 128 68 135 72 145 72 C 155 72 165 72 175 72" stroke="var(--ink-3)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M 88 85 C 89 87 90 87 91 84 L 96 38 C 97 28 98 18 98.5 15 C 99 18 100 28 101 38 L 106 84 C 107 87 108 87 109 85" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <circle cx="98.5" cy="12" r="10" fill="url(#navGlow)"/>
+                    <circle cx="98.5" cy="12" r="3" fill="var(--accent)"/>
+                </svg>signyl
             </a>
             <ul class="nav-links">
                 <li><a href="/">About</a></li>
