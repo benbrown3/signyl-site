@@ -1,0 +1,11 @@
+.env
+*.env
+.meta-ads.env
+memory/
+skills/
+tools/
+node_modules/
+.DS_Store
+credentials/
+*.pem
+*.key
